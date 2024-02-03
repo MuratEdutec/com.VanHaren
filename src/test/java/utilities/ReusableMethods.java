@@ -17,7 +17,7 @@ import java.util.function.Function;
 
 import static utilities.Driver.driver;
 
-public class ReusableMethod {
+public class ReusableMethods {
 
 
 
@@ -173,35 +173,35 @@ public class ReusableMethod {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0,400)");
-        ReusableMethod.justwait(2);
+        ReusableMethods.justwait(2);
         js.executeScript("window.scrollBy(0,400)");
-        ReusableMethod.justwait(2);
+        ReusableMethods.justwait(2);
         js.executeScript("window.scrollBy(0,400)");
-        ReusableMethod.justwait(2);
+        ReusableMethods.justwait(2);
         js.executeScript("window.scrollBy(0,400)");
-        ReusableMethod.justwait(2);
+        ReusableMethods.justwait(2);
         js.executeScript("window.scrollBy(0,400)");
-        ReusableMethod.justwait(2);
+        ReusableMethods.justwait(2);
         js.executeScript("window.scrollBy(0,400)");
-        ReusableMethod.justwait(2);
+        ReusableMethods.justwait(2);
         js.executeScript("window.scrollBy(0,400)");
-        ReusableMethod.justwait(2);
+        ReusableMethods.justwait(2);
         js.executeScript("window.scrollBy(0,400)");
-        ReusableMethod.justwait(2);
+        ReusableMethods.justwait(2);
         js.executeScript("window.scrollBy(0,400)");
-        ReusableMethod.justwait(2);
+        ReusableMethods.justwait(2);
         js.executeScript("window.scrollBy(0,400)");
-        ReusableMethod.justwait(2);
+        ReusableMethods.justwait(2);
         js.executeScript("window.scrollBy(0,400)");
-        ReusableMethod.justwait(2);
+        ReusableMethods.justwait(2);
         js.executeScript("window.scrollBy(0,400)");
-        ReusableMethod.justwait(2);
+        ReusableMethods.justwait(2);
         js.executeScript("window.scrollBy(0,400)");
-        ReusableMethod.justwait(2);
+        ReusableMethods.justwait(2);
         js.executeScript("window.scrollBy(0,400)");
-        ReusableMethod.justwait(2);
+        ReusableMethods.justwait(2);
         js.executeScript("window.scrollBy(0,400)");
-        ReusableMethod.justwait(2);
+        ReusableMethods.justwait(2);
         js.executeScript("window.scrollBy(0,400)");
         
 
@@ -222,7 +222,7 @@ public class ReusableMethod {
         WebElement signInbutton = driver.findElement(By.xpath("//button[text()='Sign In']"));
         userEmailTextBox.sendKeys(userEmailAddress);
         useremailTesxtBox.sendKeys(userPassword);
-        ReusableMethod.waitToSee(1);
+        ReusableMethods.waitToSee(1);
         signInbutton.click();
     }
 
@@ -254,7 +254,7 @@ public class ReusableMethod {
         WebElement signInbutton = driver.findElement(By.xpath("//button[text()='Sign In']"));
         userEmailTextBox.sendKeys(userEmailAddress);
         useremailTesxtBox.sendKeys(userPassword);
-        ReusableMethod.waitToSee(1);
+        ReusableMethods.waitToSee(1);
         signInbutton.click();
     }
 

@@ -17,7 +17,7 @@ public class VanHarenPages {
     public WebElement filter_button;
 
     //Gender button- Male
-    @FindBy(xpath = "((//img[@alt='Van haren Sale'])[3])")
+    @FindBy(xpath = "(//img[@alt='Time Restriction for ALL Gender Sale new Banner start 02.02 23:59'])")
     public WebElement heren_button;
 
 

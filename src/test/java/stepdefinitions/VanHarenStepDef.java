@@ -6,7 +6,7 @@ import io.cucumber.java.en.Then;
 import pages.VanHarenPages;
 import utilities.ConfigReader;
 import utilities.Driver;
-import utilities.ReusableMethod;
+import utilities.ReusableMethods;
 
 
 public class VanHarenStepDef {
@@ -31,7 +31,7 @@ public class VanHarenStepDef {
     @Then("click Heren Sale")
     public void clickHerenSale() {
         pages = new VanHarenPages();
-        ReusableMethod.justwait(1);
+        ReusableMethods.justwait(1);
         pages.heren_button.click();
     }
 
@@ -39,7 +39,8 @@ public class VanHarenStepDef {
     @Then("click filter")
     public void clickFilter() {
         pages = new VanHarenPages();
-        ReusableMethod.justwait(1);
+        ReusableMethods.justwait(1);
+        ReusableMethods.scrolldown_600();
         pages.filter_button.click();
 
     }
@@ -63,14 +64,14 @@ public class VanHarenStepDef {
     public void clickResultatenTonen() {
         pages = new VanHarenPages();
         pages.resultatentonen_button.click();
-        ReusableMethod.scrolldown_slowly();
+        ReusableMethods.scrolldown_slowly();
 
 
     }
 
     @And("terminate test")
     public void terminateTest() {
-        ReusableMethod.justwait(2);
+        ReusableMethods.justwait(2);
         Driver.closeDriver();
         Driver.quitDriver();
     }

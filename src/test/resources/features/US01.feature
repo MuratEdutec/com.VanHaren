@@ -10,6 +10,6 @@ Feature: US_01 I can easily choose the sale items correctly
     Then  click maat and select maat 42
     Then  click toepassen
     Then  click resultaten tonen
-    #And   terminate test
+    And   terminate test
 
 
