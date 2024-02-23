@@ -5,7 +5,8 @@ Feature: US_01 I can easily choose the sale items correctly
 
     Given go to van Haren
     Then  close pop up
-    Then  click Heren Sale
+    Then  click Heren
+    Then  click Sale Alles
     Then  click filter
     Then  click maat and select maat 42
     Then  click toepassen

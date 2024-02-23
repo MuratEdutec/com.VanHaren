@@ -24,18 +24,20 @@ public class VanHarenStepDef {
     @Then("close pop up")
     public void closePopUp() {
         pages = new VanHarenPages();
-        pages.popupclose.click();
+        pages.popup_close.click();
     }
 
-
-    @Then("click Heren Sale")
-    public void clickHerenSale() {
+    @Then("click Heren")
+    public void clickHeren() {
         pages = new VanHarenPages();
-        ReusableMethods.justwait(1);
+        ReusableMethods.justwait(3);
         pages.heren_button.click();
     }
-
-
+    @Then("click Sale Alles")
+    public void clickSaleAlles() {
+        pages = new VanHarenPages();
+        pages.salealles_button.click();
+    }
     @Then("click filter")
     public void clickFilter() {
         pages = new VanHarenPages();
@@ -75,4 +77,7 @@ public class VanHarenStepDef {
         Driver.closeDriver();
         Driver.quitDriver();
     }
+
+
+
 }
