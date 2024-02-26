@@ -3,10 +3,13 @@ package stepdefinitions;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import org.openqa.selenium.JavascriptExecutor;
 import pages.VanHarenPages;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
+
+import static utilities.Driver.driver;
 
 
 public class VanHarenStepDef {
@@ -66,7 +69,7 @@ public class VanHarenStepDef {
     public void clickResultatenTonen() {
         pages = new VanHarenPages();
         pages.resultatentonen_button.click();
-        ReusableMethods.scrolldown_slowly();
+        //ReusableMethods.scrolldown_slowly();
 
 
     }
@@ -78,6 +81,23 @@ public class VanHarenStepDef {
         Driver.quitDriver();
     }
 
+    @Then("click merk and select FILA")
+    public void clickMerkAndSelectFILA() {
+        pages= new VanHarenPages();
+        pages.merk_button.click();
+        pages.fila_select.click();
+        pages.toepassen2_button.click();
+
+    }
 
 
+    @Then("click resultaten tonen_")
+    public void clickResultatenTonen_() throws InterruptedException {
+        pages= new VanHarenPages();
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", pages.endOfList);
+        Thread.sleep(5000);
+
+
+
+    }
 }
